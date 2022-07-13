@@ -49,12 +49,12 @@ namespace First_Task.Services
                 }
                 section = await reader.ReadNextSectionAsync();
             }
-            ConfigureAndSaveFileAndValidRows(fullFilePath);
+            SaveRowsWithFileId(fullFilePath);
 
             return true;
         }
 
-        public void ConfigureAndSaveFileAndValidRows(string fullFilePath)
+        public void SaveRowsWithFileId(string fullFilePath)
         {
             var file = new FileInfo(fullFilePath);
             var preparedLines = PrepareFileLines(fullFilePath);

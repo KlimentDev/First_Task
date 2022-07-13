@@ -6,6 +6,6 @@ namespace First_Task.Interfaces
     {
         public void SaveRows(List<FileLine> fileLines);
 
-        public List<FileLine> GetRowsById(int id);
+        public List<FileLine> GetRowsByTextFileId(int id);
     }
 }

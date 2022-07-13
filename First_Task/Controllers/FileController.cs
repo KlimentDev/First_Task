@@ -25,7 +25,7 @@ namespace First_Task.Controllers
             var lastFile = _fileRepository.GetLastFile();
             if (lastFile != null)
             {
-                var fileLines = _fileLineRepository.GetRowsById(lastFile.Id);
+                var fileLines = _fileLineRepository.GetRowsByTextFileId(lastFile.Id);
 
                 if (fileLines.Count > 0)
                 {
@@ -39,7 +39,7 @@ namespace First_Task.Controllers
 
         [ActionName("Index")]
         [HttpPost]
-        public async Task<IActionResult> SaveFileToPhysicalFolder()
+        public async Task<IActionResult> SaveFile()
         {
             var boundary = HeaderUtilities.RemoveQuotes(
                 MediaTypeHeaderValue.Parse(Request.ContentType).Boundary

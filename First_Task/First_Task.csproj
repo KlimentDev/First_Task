@@ -10,8 +10,6 @@
     <PackageReference Include="Chart.js" Version="3.7.1" />
     <PackageReference Include="ChartJSCore" Version="3.3.0" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="FluentValidation" Version="11.1.0" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
     <PackageReference Include="Z.EntityFramework.Extensions" Version="6.14.2" />
   </ItemGroup>
 

@@ -19,14 +19,12 @@ namespace First_Task.Repository
             }
         }
 
-        public List<FileLine> GetRowsById(int id)
+        public List<FileLine> GetRowsByTextFileId(int id)
         {
             try
             {
                 using var context = new ChartDatabaseContext();
-                return context.FileLines
-                        .SqlQuery($"Select * from FileLines where TextFileId = {id}")
-                        .ToList();
+                return context.FileLines.Where(x => x.TextFileId == id).ToList();
             }
             catch (Exception)
             {
