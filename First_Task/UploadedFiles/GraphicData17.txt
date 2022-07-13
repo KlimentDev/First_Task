@@ -1,0 +1,4 @@
+- Red , 40, Skopje
+- gray, 3, Ohrid
+- blue, 5,Tetovo
+- yellow,34,Desert
